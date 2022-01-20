@@ -1,0 +1,30 @@
+ALGORITHM checkpt.algo
+VAR
+c:CHAR;
+nbw:INTEGER:=0;
+nbv:INTEGER:=0;
+nbe:INTEGER:=0;
+str:STRING;
+
+
+BEGIN
+ REPEAT
+     Read(C)
+     IF (c in ['a', 'e', 'o', 'y', 'i', 'u','A', 'E', 'O', 'Y', 'I', 'U']) THEN
+         nbv:=nbv+1
+         str:=str+c
+     END_IF
+ 
+
+     IF (c:='') THEN
+       nbe:=nbe+1
+     ELSE
+       nbc:=nbc+1
+     END_IF
+    Write(nbw:=nbw+1)
+
+
+UNTIL (c:='.')
+Write(str)
+
+END
