@@ -4,7 +4,7 @@ c:CHAR;
 nbw:INTEGER:=0;
 nbv:INTEGER:=0;
 nbe:INTEGER:=0;
-str:STRING;
+str:STRING:="";
 
 
 BEGIN
@@ -26,5 +26,8 @@ BEGIN
 
 UNTIL (c:='.')
 Write(str)
+write ("number of vowels:", nbv);
+write ("number of words:", nbw);
+write ("number of charachters:", nbc);
 
 END
